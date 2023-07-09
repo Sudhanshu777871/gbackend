@@ -28,7 +28,7 @@ app.get("/search/:data", async (req, res) => {
   try {
     // Make a request to the external API
     const response = await axios.get(
-      `https://serpapi.com/search.json?api_key=${api_key}&engine=google&q=${req.params.data}&location=Seattle-Tacoma,+WA,+Washington,+United+States&hl=en&gl=in&google_domain=google.com&num=10&start=10&safe=active`
+      `https://serpapi.com/search.json?api_key=${api_key}&engine=google&q=${req.params.data}&location=Seattle-Tacoma,+WA,+Washington,+United+States&hl=en&gl=in&google_domain=google.com&num=20&start=10&safe=active`
     );
 
     // Return the API response to the client
